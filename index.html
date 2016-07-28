@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+	<title>CreateJS Picker Sample</title>
+
+	<link rel="stylesheet" href="style.css">
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+</head>
+
+
+<body>
+
+
+	<h1>test</h1>
+
+	<div>
+		<canvas id="demo" width="500" height="300">
+			alternate content
+		</canvas>
+	</div>
+
+	<hr>
+
+	<div>
+		<button onclick='changeColor("blue")'>青くする</button>
+		<button onclick='changeColor("green")'>緑にする</button>
+	</div>
+
+	<hr>
+
+	<div>
+		<button onclick="getBase64()">Canvasを base64(PNG)に変換</button>
+	</div>
+
+	<div id="base64text" style="width: 400px; word-wrap:break-word;"></div>
+	<script src="./main.js"></script>
+
+</body>
+
+</html>
