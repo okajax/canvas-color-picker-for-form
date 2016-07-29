@@ -6,41 +6,86 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no" />
 
-	<title>CreateJS Picker Sample</title>
+	<title>CreateJS Rich Color Picker for Web Form - Demo</title>
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 
-
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
 </head>
 
 
 <body>
 
+	<div class="container">
 
-	<h1>test</h1>
+		<h1>🤗 CreateJS Rich Color Picker for Web Form - Demo</h1>
 
-	<div>
-		<canvas id="demo" width="500" height="300">
-			alternate content
-		</canvas>
+		<hr>
+
+		<h2>Please imitate this pettern 🤔</h2>
+
+		<img src="data:image/png;base64,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
+" alt="">
+
+		<hr>
+		
+		<h2>Let's pick colors! 🎨</h2>
+
+		<div>
+			<canvas id="demo" width="400" height="120">
+				alternate content
+			</canvas>
+		</div>
+		<p><small>You can paint panels by clicking buttons below.</small></p>
+		<button class='ColorButton _blue' onclick='changeColor("blue")'>青くする</button>
+		<button class='ColorButton _green' onclick='changeColor("green")'>緑にする</button>
+		<button class='ColorButton _red' onclick='changeColor("red")'>緑にする</button>
+		<button class='ColorButton _yellow' onclick='changeColor("yellow")'>緑にする</button>
+
+		<hr>
+
+		<div class="text-center">
+			<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" onclick="send()">SEND MY ANSWER</button>
+		</div>
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Result</h4>
+					</div>
+					<div class="modal-body">
+						<p>Your answer is</p>
+						<img id="usersAnswer" src="" alt="">
+						
+						<h4>Note:</h4>
+						<p>You can get base64 string made from canvas.<br>
+						So, post this  base64 string to server!</p>
+						
+						<pre id="codeBox"></pre>
+						
+						<p>If, you want to render the image on HTML or HTML Mail,<br>
+						set this base64 string to <code>src</code> attribute of <code>&lt;img&gt;</code>.</p>
+
+						
+						
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
 	</div>
 
-	<hr>
-
-	<div>
-		<button onclick='changeColor("blue")'>青くする</button>
-		<button onclick='changeColor("green")'>緑にする</button>
-	</div>
-
-	<hr>
-
-	<div>
-		<button onclick="getBase64()">Canvasを base64(PNG)に変換</button>
-	</div>
-
-	<div id="base64text" style="width: 400px; word-wrap:break-word;"></div>
 	<script src="./main.js"></script>
 
 </body>

@@ -4,3 +4,30 @@ body {
 canvas{
 	border: 1px solid #ccc;
 }
+
+.ColorButton{
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #bfbfbf;
+	text-indent: -9999px;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+.ColorButton[disabled]{
+	opacity: 0.4;
+}
+.ColorButton._blue{
+	background: #0000ff;
+}
+.ColorButton._green{
+	background: #007b00;
+}
+.ColorButton._red{
+	background: #ff0000;
+}
+.ColorButton._yellow{
+	background: #ffff00;
+}
